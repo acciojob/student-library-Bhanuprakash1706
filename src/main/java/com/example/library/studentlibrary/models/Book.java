@@ -26,7 +26,7 @@ public class Book {
     private Genre genre;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn// we need to removed json ignore to provide author value in postman
     @JsonIgnoreProperties("booksWritten")
     private Author author;
 

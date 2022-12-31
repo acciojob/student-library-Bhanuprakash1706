@@ -14,7 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 public class Student {
-
+    //email,name,age,country
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

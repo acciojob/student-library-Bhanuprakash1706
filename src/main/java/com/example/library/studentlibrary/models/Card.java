@@ -16,7 +16,7 @@ import java.util.List;
 @Builder
 @ToString
 public class Card {
-
+//
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

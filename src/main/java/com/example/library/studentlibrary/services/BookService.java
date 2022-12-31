@@ -1,5 +1,6 @@
 package com.example.library.studentlibrary.services;
 
+import com.example.library.studentlibrary.models.Author;
 import com.example.library.studentlibrary.models.Book;
 import com.example.library.studentlibrary.models.Genre;
 import com.example.library.studentlibrary.repositories.BookRepository;
@@ -17,6 +18,10 @@ public class BookService {
 
     public void createBook(Book book){
         bookRepository2.save(book);
+//       Author author= book.getAuthor();
+//       int id=author.getId();
+
+        //we need to set author while creating book but here there is no author info
     }
 
     public List<Book> getBooks(String genre, boolean available, String author){
